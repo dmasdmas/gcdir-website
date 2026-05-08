@@ -6,9 +6,7 @@ permalink: /blog/
 
 <h1>Blog</h1>
 
-<p class="blog-intro">
-  Explore our latest commentary, research highlights, and reflections on the evolving landscape of digital influence and technology.
-</p>
+<p>The GCDIR blog publishes commentary, research notes, and discussion of methodological and substantive questions related to the Center's research agenda. Contributions from affiliated researchers and external scholars are welcomed.</p>
 
 {% if site.posts.size > 0 %}
   <div class="posts">
@@ -17,7 +15,7 @@ permalink: /blog/
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         <p class="post-meta">
           <time datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date: "%B %-d, %Y" }}
+            {{ post.date | date: "%-d %B %Y" }}
           </time>
         </p>
         {% if post.excerpt %}
@@ -30,9 +28,9 @@ permalink: /blog/
     {% endfor %}
   </div>
 {% else %}
-  <p>No blog posts yet. Check back soon for our latest insights and research updates.</p>
+  <p>No posts yet. Check back soon.</p>
 {% endif %}
 
 <hr>
 
-<p><em>Interested in contributing to the blog? <a href="mailto:contact@gcdir.org">Contact us</a> with your proposal or idea.</em></p>
+<p>Researchers and practitioners interested in contributing to the blog are invited to write to <a href="mailto:contact@gcdir.org">contact@gcdir.org</a> with a proposal.</p>

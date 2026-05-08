@@ -1,41 +1,30 @@
 ---
 layout: default
-title: Home
+title: Global Center for Digital Influence Research
 ---
 
-# Welcome to the Global Center for Digital Influence Research (GCDIR)
+# Global Center for Digital Influence Research
 
-The Global Center for Digital Influence Research (GCDIR) is an independent,
-intra-disciplinary research organization focused on understanding how digital
-influence shapes human behavior. With roots in both industry and academia, but
-without ties to any single institution, GCDIR bridges sectors to advance rigorous
-research. We connect real-world data with academic expertise across economics,
-political science, statistics, computer science, psychology, and marketing.
+The Global Center for Digital Influence Research (GCDIR) is an independent, interdisciplinary research organization studying how digital technologies shape attitudes, beliefs, and behavior. The Center's work draws on methods from psychology, economics, political science, statistics, computer science, and communication research, and is conducted in collaboration with academic institutions and industry partners.
 
-## Our Mission
+## Mission
 
-We conduct rigorous research to understand digital influence and how it shapes
-public opinion, political discourse, and social behavior. Our work helps
-policymakers, researchers, industry, and the public gain deeper insight into the
-mechanisms and impacts of influence in the digital age.
+GCDIR conducts and disseminates research on the mechanisms and consequences of digital influence. The Center's objective is to contribute peer-quality empirical evidence to scholarly literature, public policy debate, and professional practice. GCDIR maintains editorial independence from its partners and publishes its findings openly.
 
-## What We Do
+## Areas of activity
 
-- **Research**: Conduct in-depth studies on the mechanisms of digital influence.
-- **Analysis**: Generate data-driven insights into online information ecosystems.
-- **Education**: Share findings through publications, talks, and public engagement.
-- **Collaboration**: Partner with academia and industry to advance knowledge and practice.
+GCDIR's activities include original research, methodological development, and the publication of working papers and peer-reviewed articles. The Center also organizes seminars and workshops and supports collaborative projects between academic researchers and industry data providers.
 
-## Join GCDIR
+## Data and methods
 
-Launched in 2025, GCDIR is actively expanding its network. If you work on or
-research digital influence, we’d love to hear from you.
+Through its industry partnerships, GCDIR has access to large-scale behavioral and outcome data from commercial digital campaigns — including measured conversions and revenue outcomes linked to creator-level psychometric profiles. This combination of behavioral data and validated outcomes supports research designs that are typically difficult to execute using publicly available data alone. A description of the Center's data resources and access procedures is provided on the [About](/about) page.
 
-## Latest Updates
+## Affiliation and governance
 
-Explore our latest research findings, publications, and insights by visiting our
-[Research](/research) section and [Blog](/blog).
+GCDIR is not affiliated with any single university or commercial entity. It maintains formal partnerships with academic institutions and industry organizations that provide data access and applied context. A full description of the Center's governance, team, and partners is available on the [About](/about) page.
 
----
+## Engagement
 
-*For more information about our work and team, visit our [About](/about) page.* 
+GCDIR was established in 2025 and is currently expanding its network of affiliated researchers and partner organizations. Researchers, practitioners, and institutions interested in collaboration are invited to make contact through the [About](/about) page.
+
+For ongoing publications and commentary, see the [Research](/research) and [Blog](/blog) sections.
