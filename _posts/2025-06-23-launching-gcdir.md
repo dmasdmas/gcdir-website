@@ -1,59 +1,42 @@
 ---
-layout: post
 title: "Launching GCDIR: Advancing Digital Influence Research"
 date: 2025-06-23
 categories: announcement research
 author: "GCDIR Team"
-excerpt: "Introducing the Global Center for Digital Influence Research and our mission to understand the complex landscape of digital influence."
+excerpt: "An introduction to the Global Center for Digital Influence Research, its research agenda, and its institutional model."
 ---
 
-We are excited to announce the launch of the Global Center for Digital Influence Research (GCDIR), an independent research organization dedicated to understanding and analyzing the evolving landscape of digital influence.
+23 June 2025 · GCDIR
 
-## Why GCDIR?
+The Global Center for Digital Influence Research (GCDIR) is an independent, interdisciplinary research organization established to study how digital technologies shape attitudes, beliefs, and behavior. This post introduces the Center, its research agenda, and the institutional model under which it operates.
 
-In an era where digital technologies shape how we receive information, form opinions, and participate in democratic processes, it is critical to study the mechanisms and impacts of digital influence. From social media algorithms to AI-generated content, from political advertising to cross-platform information flows, the digital influence ecosystem is both complex and rapidly evolving.
+## Background
 
-## Our Approach
+The empirical study of digital influence sits at an awkward methodological position. The phenomena of interest — how attention is allocated, how trust is formed, how exposure translates into belief and behavior — occur at scale, in commercial environments, and through systems whose internal workings are typically not observable to researchers. The data that would allow such phenomena to be studied rigorously is, for the most part, held by platforms and brands rather than by academic institutions.
 
-At GCDIR, we believe that addressing these challenges requires rigorous,
-interdisciplinary research. Our mission is to bring together expertise from
-various fields, including, computer science, political science, sociology,
-psychology, economics, statistics, and communication studies to produce
-empirically grounded and theoretically informed insights.
+This constraint has shaped what the field has been able to address. Research has often relied on engagement proxies — likes, shares, impressions — because these are what is publicly observable. Outcomes that more directly reflect persuasion and behavioral change have been harder to study at scale.
 
-### Research Priorities
+GCDIR was established to contribute to closing this gap, by combining academic methodological standards with access to behavioral and outcome data made available through industry partnerships.
 
-Our initial research agenda focuses on four core areas:
+## Research agenda
 
-1. **Social Media Influence**  
-   Platform algorithm analysis, behavioral change mechanisms, and network dynamics
+The Center's principal research program examines the psychology of persuasion in creator-mediated digital environments: the conditions under which content produced by individuals on social platforms shapes the attitudes, trust, and behavior of their audiences. The program addresses questions including the relationship between creator psychological characteristics and audience response, the mechanisms of trust formation in feed-based environments, and the conditions under which exposure produces measurable behavioral change.
 
-2. **Digital Misinformation and Disinformation**  
-   Spread patterns, public opinion impacts, and mitigation strategies
+Adjacent areas of interest include platform dynamics and algorithmic curation; the production and effects of misinformation; political communication and digital campaigning; and the persuasive properties of emerging technologies including generative AI and synthetic media.
 
-3. **Political Digital Influence**  
-   Election interference, political advertising effectiveness, and digital participation
+A more detailed description of the research agenda, current projects, and intended outputs is available on the [Research](/research) page.
 
-4. **Emerging Technologies**  
-   AI-generated content, deepfakes, decentralized platforms, and immersive influence in virtual and augmented environments
+## Institutional model
 
-## Join GCDIR
+GCDIR operates as a collaborative research network rather than as a hosted institute. The Center is not affiliated with any single university or commercial entity. It maintains formal partnerships with academic institutions and industry organizations that provide data access and applied context, and it maintains editorial independence in the design, conduct, and publication of its research.
 
-We are currently building our network and welcome interest from researchers and industry professionals working on digital influence. All positions are currently on a voluntary, non-paid basis as we establish the organization and its partnerships. If you are passionate about advancing research in this space, we encourage you to reach out.
+Several members of the Center's leadership hold concurrent roles at Trudy, which is also one of GCDIR's industry data partners. This relationship — and others of comparable kind — will be disclosed in all publications in accordance with standard academic practice. A full description of the Center's governance, team, and partners is available on the [About](/about) page.
 
-## Looking Ahead
+## Engagement
 
-We will use this blog to share our research findings, methodologies, and
-commentary on digital influence and related topics. Our goal is to make our work
-accessible to researchers, professionals, policymakers, and the public.
+GCDIR is currently expanding its network of affiliated researchers and partner organizations. Researchers, practitioners, and institutions interested in contributing to the Center's work — through collaboration, data partnership, or independent research aligned with its agenda — are invited to make contact at <contact@gcdir.org>.
 
-We also welcome collaboration opportunities with academic institutions, civil society organizations, and technology companies that share our mission.
-
-## Stay Connected
-
-To follow our work, visit the [Research](/research) section for updates on projects and publications, and subscribe to this blog for ongoing commentary and insights.
-
-Thank you for joining us in building a deeper understanding of digital influence—and helping shape a more informed, resilient digital society.
+This blog will be used to publish research notes, commentary on developments in the field, and discussion of methodological questions arising in the Center's work.
 
 ---
 

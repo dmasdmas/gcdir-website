@@ -6,50 +6,53 @@ permalink: /research/
 
 # Research
 
-GCDIR conducts interdisciplinary research on digital influence and its effects on individual behavior, social systems, and public discourse. Our work combines theoretical insight and empirical methods to investigate how influence is shaped, amplified, and operationalized in digital environments.
+GCDIR conducts interdisciplinary research on digital influence and its effects on individual behavior, social systems, and public discourse. Research projects combine theoretical frameworks from the behavioral and social sciences with empirical methods drawn from computational social science, statistics, and applied psychology.
 
-## Research Areas
+## Primary research program
 
-Below are some of the core areas we currently explore. This list is illustrative rather than exhaustive, and we welcome contributions from related domains.
+The Center's principal research program examines the **psychology of persuasion in creator-mediated digital environments** — that is, the conditions under which content produced by individuals on social platforms shapes the attitudes, trust, and behavior of their audiences. This program takes advantage of GCDIR's access to large-scale behavioral and outcome data linking creator-level psychometric profiles to measured downstream behavior, and addresses questions including:
 
-### Social Media Influence
-- Platform algorithm analysis  
-- Behavioral change mechanisms  
-- Network and virality dynamics  
+- The relationship between creator psychological characteristics — values, personality, communication style — and audience response
+- Mechanisms of trust formation and parasocial influence in feed-based environments
+- Congruency effects: how similarity between creators and their audiences shapes engagement, persuasion, and behavioral outcomes
+- The conditions under which exposure to creator content produces measurable behavioral change, including but not limited to commercial outcomes
+- Methodological development for the empirical study of psychological influence at scale
 
-### Digital Misinformation and Disinformation
-- Spread patterns of false or misleading content  
-- Public opinion and decision-making impact studies  
-- Detection and mitigation strategies  
+This program is distinctive in its access to validated behavioral outcomes — including conversion and revenue data from commercial campaigns — rather than the engagement proxies that typically constrain research in this area.
 
-### Political Digital Influence
-- Election interference and digital campaigning  
-- Effectiveness of political advertising and targeting  
-- Democratic participation in algorithmic ecosystems  
+## Broader research interests
 
-### Emerging Technologies
-- Influence of AI-generated content and deepfakes  
-- Decentralized platforms and blockchain-based media  
-- Social effects of virtual and augmented reality  
+The Center engages with a range of adjacent questions in the study of digital influence, both through its own work and through collaboration with affiliated researchers. Areas of active interest include:
 
-## Current Projects
+**Platform dynamics.** Algorithmic curation, the diffusion of content through networks, and the structural conditions under which digital platforms shape attention and behavior.
+
+**Misinformation and persuasive integrity.** The production, spread, and effects of misleading information in digital environments, with particular interest in the role of trusted intermediaries in either amplifying or resisting it.
+
+**Political communication.** Digital campaigning, advertising, and the implications of algorithmic mediation for democratic participation, with attention to how the mechanisms of commercial persuasion translate into political contexts.
+
+**Emerging technologies.** The persuasive properties and methodological challenges posed by generative AI, synthetic media, and immersive media.
+
+The Center welcomes collaboration with researchers working on these and related questions, particularly where GCDIR's data resources or methodological work can support broader scholarly inquiry.
+
+## Current projects
 
 ### *Birds of a Feather or Digital Echo Chambers: Congruency in Influencer Marketing*
-This project investigates how similarity between influencers and their audiences shapes engagement and conversion rates.
 
-- **Status**: Ongoing  
-- **Timeline**: 2025–  
+The project examines how psychological and demographic congruency between content creators and their audiences relates to engagement and conversion outcomes in commercial influencer campaigns.
 
-*More projects will be listed as they are launched.*
+- **Status:** Ongoing
+- **Period:** 2025–
+
+Additional projects will be listed as they are initiated.
 
 ## Publications
 
-*A list of working papers, preprints, and peer-reviewed articles will be made available here as research outputs are finalized.*
+Working papers, preprints, and peer-reviewed articles will be made available in this section as they are released. A complete bibliography of GCDIR-affiliated outputs will be maintained alongside.
 
-## Conferences and Seminars
+## Conferences and seminars
 
-GCDIR aims to organize conferences and seminar series focused on digital influence research. These will launch in coordination with community interest and project milestones.
+Programming will be announced in coordination with project milestones and partner institutions.
 
 ---
 
-*For more information about specific research projects or collaboration opportunities, please [contact us](mailto:contact@gcdir.org).*
+For inquiries regarding specific projects or collaboration, please write to <contact@gcdir.org>.
