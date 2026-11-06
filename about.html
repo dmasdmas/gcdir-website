@@ -1,19 +1,24 @@
 ---
 title: About
 permalink: /about/
-heading: About the Center
-lede: GCDIR was founded in 2025 by researchers and practitioners from behavioral science and influencer marketing. It is an independent research network and is not part of any university or company.
-description: GCDIR's mission, history, institutional model, partners and open positions.
+eyebrow: About
+heading: About GCDIR
+lede: Founded in 2025 by people from behavioral science and influencer marketing. An independent research network, with no host university and no parent company.
+bubble: Since 2025.
+accent: teal
+description: Why GCDIR exists, how it works, its relationship with Trudy, its partners and its open positions.
 ---
 <section class="section">
-  <div class="container split">
+  <div class="wrap split">
     <div>
-      <h2>Mission</h2>
-      <p>GCDIR studies how social media creators persuade their audiences, and what measurable effects that persuasion has. It publishes its results in working papers and journals, and presents them at seminars and at the GCDIR Symposium.</p>
-      <p>Academic members set the research questions and methods. Industry partners provide data and context from commercial campaigns, but do not decide what is studied or published. The rules are set out on the <a href="{{ '/integrity/' | relative_url }}">independence and integrity</a> page.</p>
+      <p class="eyebrow">Why we exist</p>
+      <h2>Much of influencer marketing is still a guess.</h2>
+      <p>Brands spend a great deal deciding which creators to trust with their name. Researchers have had little better to go on, because the records that would settle the question sit inside companies.</p>
+      <p>We study how creators persuade their audiences and measure what that persuasion does. We publish the results in working papers and journals, and present them at seminars and at the GCDIR Symposium.</p>
+      <p>Academic members set the questions and the methods. Industry partners provide data and context from commercial campaigns. They don&rsquo;t decide what we study or what we publish, and the rules that make sure of it are on the <a href="{{ '/integrity/' | relative_url }}">independence and integrity</a> page.</p>
     </div>
     <div>
-      <p class="label">Activities</p>
+      <p class="eyebrow">What we do</p>
       <ul class="check-list">
         <li>Original research on persuasion and influence</li>
         <li>Methods for measuring influence across millions of creators</li>
@@ -26,53 +31,58 @@ description: GCDIR's mission, history, institutional model, partners and open po
 </section>
 
 <section class="section section--white">
-  <div class="container">
+  <div class="wrap">
     <div class="cards cards--2">
-      <div class="card card--plain">
-        <h3>Relationship with Trudy</h3>
-        <p>Several GCDIR members also work at Trudy, which provides the Center&rsquo;s main data resource. The Center decides independently what it studies and publishes, and every publication discloses funding, data sources and the authors&rsquo; affiliations.</p>
+      <div class="card">
+        <span class="card-dot" style="--c: var(--lilac)" aria-hidden="true"></span>
+        <h3>Our relationship with Trudy</h3>
+        <p>Trudy provides our main data resource, and several GCDIR members also work at Trudy. We decide on our own what we study and publish. Every publication discloses its funding, its data sources and its authors&rsquo; affiliations.</p>
+        <a class="link-arrow" href="{{ '/integrity/#relationships' | relative_url }}">Who holds which role</a>
       </div>
-      <div class="card card--plain">
-        <h3>Institutional model</h3>
-        <p>GCDIR is a research network. Its members work from their own institutions, and it has no host university. It works with universities through its members&rsquo; affiliations, and with companies that provide data. Its members and advisors are listed on the <a href="{{ '/people/' | relative_url }}">People</a> page.</p>
+      <div class="card">
+        <span class="card-dot" style="--c: var(--peri)" aria-hidden="true"></span>
+        <h3>How we&rsquo;re organized</h3>
+        <p>GCDIR is a research network. Members work from their own institutions, and there is no host university. We work with universities through our members&rsquo; affiliations, and with companies that provide data.</p>
+        <a class="link-arrow" href="{{ '/people/' | relative_url }}">Meet the people</a>
       </div>
     </div>
   </div>
 </section>
 
 <section class="section section--tight">
-  <div class="container">
-    <p class="label">Affiliations and partners</p>
+  <div class="wrap">
+    <p class="eyebrow">Affiliations and partners</p>
     {% include partners.html %}
   </div>
 </section>
 
 <section class="section section--white" id="opportunities">
-  <div class="container">
+  <div class="wrap">
     <div class="section-head">
-      <h2>Open positions</h2>
-      <p>GCDIR is recruiting on two tracks. Positions are currently voluntary and unpaid.</p>
+      <p class="eyebrow">Open positions</p>
+      <h2>Two tracks, one network.</h2>
+      <p>We&rsquo;re recruiting on an academic track and an industry track. For now, positions are voluntary and unpaid. We&rsquo;d rather say that up front.</p>
     </div>
     <div class="cards cards--2">
       <div class="card">
+        <span class="card-dot" style="--c: var(--peri)" aria-hidden="true"></span>
         <h3>Academic track</h3>
         <ul class="plain-list">
           <li>Senior Research Scientists</li>
           <li>Postdoctoral Researchers</li>
           <li>Graduate Research Assistants</li>
         </ul>
+        <a class="link-arrow" href="{{ '/apply/?track=affiliate' | relative_url }}">Apply on the academic track</a>
       </div>
       <div class="card">
+        <span class="card-dot" style="--c: var(--orange)" aria-hidden="true"></span>
         <h3>Industry track</h3>
         <ul class="plain-list">
           <li>Domain Experts</li>
           <li>Data Scientists</li>
         </ul>
+        <a class="link-arrow" href="{{ '/apply/?track=industry' | relative_url }}">Apply on the industry track</a>
       </div>
-    </div>
-    <div class="actions">
-      <a class="btn btn-primary" href="{{ '/apply/?track=affiliate' | relative_url }}">Apply on the academic track</a>
-      <a class="btn btn-outline" href="{{ '/apply/?track=industry' | relative_url }}">Apply on the industry track</a>
     </div>
   </div>
 </section>

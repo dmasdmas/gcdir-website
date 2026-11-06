@@ -1,9 +1,14 @@
-# Research areas shown on the home and research pages.
+# Nearby research areas, shown on the home and research pages.
+# color: one of peri, lilac, orange, teal, lime (sets the dot on the card).
 - title: Platform dynamics
-  text: How ranking algorithms and network structure shape what people see, and what that does to attention and behavior.
+  color: peri
+  text: How ranking algorithms and network structure decide what people see, and what that does to attention and behavior.
 - title: Misinformation
-  text: How misleading claims spread on social platforms, and whether trusted creators speed them up or slow them down.
+  color: orange
+  text: How misleading claims spread, and whether a trusted creator speeds them up or slows them down.
 - title: Political communication
-  text: Whether methods from commercial influencer campaigns carry over to political campaigning and advertising, and with what effect.
+  color: teal
+  text: Whether what works in a commercial campaign also works in a political one, and what follows if it does.
 - title: Generative AI and synthetic media
-  text: How AI-generated creators and content persuade, and the measurement problems they raise.
+  color: lilac
+  text: How AI-generated creators persuade, and the measurement problems they bring with them.

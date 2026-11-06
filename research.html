@@ -2,71 +2,83 @@
 title: Research
 permalink: /research/
 eyebrow: Research
-heading: Research program
-lede: GCDIR&rsquo;s research combines behavioral science with statistics and computational methods. Most of it draws on one data resource, in which creator profiles are linked to the outcomes of the campaigns those creators ran.
-description: GCDIR's main research program on persuasion by social media creators, related research areas and current projects.
+heading: What we study
+lede: One main question, asked carefully. When does a creator change what their audience does? Most of our work draws on one data resource, which links creator profiles to what happened after their campaigns.
+bubble: Who believes whom?
+accent: peri
+description: GCDIR's main research program on persuasion by social media creators, the questions it asks, nearby research areas, current projects and publications.
 ---
 <section class="section" id="primary-program">
-  <div class="container split">
+  <div class="wrap split">
     <div>
-      <p class="label">Main program</p>
+      <p class="eyebrow">Main program</p>
       <h2>The psychology of persuasion in creator-mediated environments</h2>
-      <p>The program asks when content from individual creators on social platforms changes what their audiences think and do, and which creators are most persuasive.</p>
-      <p>It is built on the Center&rsquo;s main data resource, which links psychological profiles of creators to the conversions and revenue from their campaigns. The <a href="{{ '/data/' | relative_url }}">Data</a> page describes what the resource contains and how access works.</p>
+      <p>That is the formal name. In plain words, it asks which creators change what their audiences think and do, and why some are far more persuasive than others.</p>
+      <p>It runs on our main data resource, which links psychological profiles of creators to the sales, sign-ups and revenue from their campaigns. The <a href="{{ '/data/' | relative_url }}">Data</a> page says what the resource holds and how access works.</p>
+      <p>We combine behavioral science with statistics and computational methods. A hunch is where a study starts, never where it ends.</p>
     </div>
     <div>
-      <p class="label">Research questions</p>
+      <p class="eyebrow">Five questions we keep asking</p>
       <ol class="qlist">
-        <li>Which psychological characteristics of creators, such as values, personality and communication style, predict how their audiences respond?</li>
-        <li>How do audiences come to trust creators they know only through a feed, and how does that trust affect persuasion?</li>
-        <li>Does similarity between a creator and their audience increase engagement and conversions, and when does it stop helping?</li>
-        <li>When does exposure to creator content lead to a measurable change in behavior, commercial or otherwise?</li>
-        <li>How can psychological influence be measured reliably across millions of creators and campaigns?</li>
+        <li>Which traits of a creator, such as their values, personality and way of talking, predict how their audience responds?</li>
+        <li>How do people come to trust someone they only know from a feed, and what does that trust do?</li>
+        <li>Does it help when a creator resembles their audience? When does it stop helping?</li>
+        <li>When does watching a creator lead to a change in behavior that you can actually measure?</li>
+        <li>How do you measure influence reliably across millions of creators and campaigns?</li>
       </ol>
     </div>
   </div>
 </section>
 
 <section class="section section--white">
-  <div class="container">
+  <div class="wrap">
     <div class="section-head">
-      <h2>Related areas</h2>
-      <p>The Center is also interested in the topics below, particularly where GCDIR data or methods can help.</p>
+      <p class="eyebrow">Nearby areas</p>
+      <h2>Four questions next door.</h2>
+      <p>We also work on these, mostly where our data or methods can add something that is hard to get elsewhere.</p>
     </div>
-    <div class="cards cards--2">
+    <div class="cards cards--4">
       {% include areas.html %}
     </div>
   </div>
 </section>
 
 <section class="section" id="current-projects">
-  <div class="container">
+  <div class="wrap">
     <div class="section-head">
-      <h2>Current projects</h2>
+      <p class="eyebrow">Current projects</p>
+      <h2>What&rsquo;s on the desk.</h2>
     </div>
     <article class="project">
-      <div class="project-meta"><span class="badge">Ongoing</span><span>2025&ndash;</span></div>
-      <h3>Birds of a Feather or Digital Echo Chambers: Congruency in Influencer Marketing</h3>
-      <p>Do audiences respond more to creators who resemble them? The project measures psychological and demographic similarity between creators and their audiences and relates it to engagement and conversions in commercial influencer campaigns.</p>
+      <div>
+        <div class="project-meta"><span class="badge">Ongoing</span><span class="muted">2025&ndash;</span></div>
+        <h3>Birds of a Feather or Digital Echo Chambers: Congruency in Influencer Marketing</h3>
+        <p>Do audiences respond more to creators who resemble them? The project measures how alike a creator and their audience are, psychologically and demographically, and relates that to engagement and sales in commercial campaigns.</p>
+        <p>The hunch is that persuasion takes two. The project checks how much the pair matters, and where similarity stops helping.</p>
+      </div>
+      <div class="pair">{% include pair.svg %}</div>
     </article>
-    <p class="muted small">New projects are listed here when they start.</p>
+    <p class="muted small note">New projects go up here when they start, not before.</p>
   </div>
 </section>
 
 <section class="section section--white">
-  <div class="container">
+  <div class="wrap">
     <div class="cards cards--2">
       <div class="card" id="publications">
+        <span class="card-dot" style="--c: var(--lilac)" aria-hidden="true"></span>
         <h3>Publications</h3>
-        <p>Working papers and journal articles by GCDIR researchers will be listed here with full references.</p>
+        <p><b>The Psychologist&rsquo;s Guide to Influence</b> (2026), with Trudy. More than 40 ways to build influence online, drawn from behavioral science. A practical guide, not a paper. <a href="mailto:{{ site.email }}?subject=The%20Psychologist%E2%80%99s%20Guide%20to%20Influence">Ask us for a copy</a>.</p>
+        <p>Working papers and journal articles will be listed here, with full references, as they appear.</p>
       </div>
       <div class="card" id="events">
+        <span class="card-dot" style="--c: var(--orange)" aria-hidden="true"></span>
         <h3>Events</h3>
-        <p>The {{ site.data.symposium.edition | downcase }} {{ site.data.symposium.title }} takes place in {{ site.data.symposium.when }} at {{ site.data.symposium.venue }} in {{ site.data.symposium.city }}.</p>
+        <p>The {{ site.data.symposium.edition | downcase }} {{ site.data.symposium.title }} takes place in {{ site.data.symposium.when }} at {{ site.data.symposium.venue }}, {{ site.data.symposium.city }}. Researchers and practitioners, one room, the evidence on the table.</p>
         <a class="link-arrow" href="{{ '/events/' | relative_url }}">About the symposium</a>
       </div>
     </div>
   </div>
 </section>
 
-{% include cta.html title="Research collaboration" text="To ask about a project, or to propose one that would use GCDIR data, apply online or write to the research team." %}
+{% include cta.html title="Got a project in mind?" text="Ask us about a project, or propose one that would use our data. Send the question, and we&rsquo;ll say plainly whether the data can answer it." %}

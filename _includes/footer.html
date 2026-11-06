@@ -1,14 +1,15 @@
 <footer class="site-footer">
-  <div class="container footer-grid">
+  <i class="shape shape--bubble" aria-hidden="true"></i>
+  <div class="wrap footer-grid">
     <div class="footer-brand">
-      <a class="brand brand--light" href="{{ '/' | relative_url }}">
+      <a class="brand brand--light" href="{{ '/' | relative_url }}" aria-label="{{ site.short_title }}, home">
         {% include mark.svg %}
         <span class="brand-text">
           <span class="brand-name">{{ site.short_title }}</span>
           <span class="brand-full">{{ site.title }}</span>
         </span>
       </a>
-      <p>A research center studying persuasion and influence on social media.</p>
+      <p>Independent research on who people believe online, and what they do about it.</p>
     </div>
     <div>
       <h2 class="footer-heading">Pages</h2>
@@ -17,17 +18,17 @@
       </ul>
     </div>
     <div>
-      <h2 class="footer-heading">Contact</h2>
+      <h2 class="footer-heading">Get in touch</h2>
       <ul class="footer-links">
         <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        <li><a href="{{ '/contact/' | relative_url }}">Collaboration and data access</a></li>
         <li><a href="{{ '/apply/' | relative_url }}">Apply</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Collaboration and data access</a></li>
         <li><a href="{{ '/integrity/' | relative_url }}">Independence and integrity</a></li>
       </ul>
     </div>
   </div>
-  <div class="container footer-bottom">
-    <span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</span>
-    <span>Founded 2025</span>
+  <div class="wrap footer-bottom">
+    <span>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Founded 2025.</span>
+    <span>Data from <a href="https://www.trudy.app">Trudy</a>, <a href="{{ '/integrity/#relationships' | relative_url }}">disclosed here</a>.</span>
   </div>
 </footer>

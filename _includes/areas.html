@@ -1,5 +1,6 @@
 {% for a in site.data.areas %}
   <div class="card">
+    <span class="card-dot" style="--c: var(--{{ a.color | default: 'lilac' }})" aria-hidden="true"></span>
     <h3>{{ a.title }}</h3>
     <p>{{ a.text }}</p>
   </div>

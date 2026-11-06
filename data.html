@@ -2,63 +2,76 @@
 title: Data
 permalink: /data/
 eyebrow: Data
-heading: The GCDIR data resource
-lede: GCDIR&rsquo;s main data resource is provided by its industry partner Trudy. It links profiles of content creators to the measured results of the commercial campaigns they took part in.
-description: GCDIR's main data resource links psychometric profiles of content creators to the conversions and revenue of about 230,000 commercial influencer campaigns.
+heading: The data
+lede: Our main data resource comes from our data partner, Trudy. It links profiles of creators to what happened after their campaigns. The sales, the sign-ups, the revenue.
+bubble: What happened next
+accent: lilac
+description: GCDIR's main data resource links psychometric profiles of about 10 million content creators to the sales and revenue of about 230,000 commercial influencer campaigns.
 ---
 <section class="section section--tight">
-  <div class="container">
+  <div class="wrap">
     {% include stats.html %}
   </div>
 </section>
 
-<section class="section">
-  <div class="container split">
+<section class="section section--white">
+  <div class="wrap split">
     <div>
-      <h2>What the data record</h2>
-      <p>For each campaign, the data record what the audience did afterwards: conversions, revenue and related transactions. Each campaign is linked to a profile of the creator who ran it.</p>
-      <p>Research on influence has mostly relied on likes, shares and views, because those are public. Records of purchases and sign-ups are held by brands and platforms; to our knowledge, few academic studies have had access to them at this scale.</p>
-      <p>The data are harmonized across brands, so results can be compared across companies and product categories, which the data of a single brand cannot support.</p>
+      <p class="eyebrow">What&rsquo;s in it</p>
+      <h2>Two halves that are rarely in the same room.</h2>
+      <p>For each campaign, we know what the audience did afterwards: purchases, sign-ups and revenue. For each creator, we know who they are, psychologically. Put the two together and you can ask which creators persuade, and then check.</p>
+      <p>Records like these usually stay inside brands and platforms. As far as we know, few academic studies have worked with them at this scale.</p>
+      <p>The data are harmonized across brands, so a result from skincare can be set beside one from sportswear. A single brand&rsquo;s data can&rsquo;t do that.</p>
     </div>
     <div>
-      <p class="label">Contents</p>
       <dl class="spec">
         <div><dt>Campaigns</dt><dd>About 230,000 commercial influencer campaigns with outcome data, from more than 800 brands in consumer categories</dd></div>
-        <div><dt>Creators</dt><dd>Psychometric and behavioral profiles of about 10 million content creators on the major platforms and markets</dd></div>
-        <div><dt>Measures</dt><dd>About 160 standardized signals per profiled creator, including personality, values, communication style and audience characteristics</dd></div>
-        <div><dt>Period</dt><dd>More than ten years of campaigns, harmonized to a common measurement framework</dd></div>
-        <div><dt>Outcomes</dt><dd>Conversions, revenue and related transaction-level records</dd></div>
+        <div><dt>Creators</dt><dd>Psychometric and behavioral profiles of about 10 million content creators, across the major platforms and markets</dd></div>
+        <div><dt>Measures</dt><dd>About 160 standardized signals per profiled creator, including personality, values, way of talking and audience characteristics</dd></div>
+        <div><dt>Period</dt><dd>More than ten years of campaigns, harmonized to one measurement framework</dd></div>
+        <div><dt>Outcomes</dt><dd>Sales, sign-ups, revenue and related transaction-level records</dd></div>
       </dl>
     </div>
   </div>
 </section>
 
-<section class="section section--white" id="access">
-  <div class="container">
-    <div class="section-head">
-      <h2>Access</h2>
-      <p>GCDIR researchers and approved external collaborators can request access to the data for a defined project.</p>
-      <a class="link-arrow" href="{{ '/apply/?track=data-access' | relative_url }}">Apply for data access</a>
-    </div>
-    <div class="cards">
-      <div class="card">
-        <h3>Project-based access</h3>
-        <p>Access is granted for a named project with a stated research question.</p>
-      </div>
-      <div class="card">
-        <h3>Review</h3>
-        <p>Each request goes through the Center&rsquo;s data governance and ethics review before any data are shared.</p>
-      </div>
-      <div class="card">
-        <h3>Access policy</h3>
-        <p>A written access policy for external researchers, including the procedure for institutional review, is in preparation.</p>
-      </div>
-    </div>
-    <div class="callout callout--spaced">
-      <p class="label">Disclosure</p>
-      <p>The data are provided by Trudy, and several GCDIR members also work at Trudy. Each publication states its funding, where its data came from and the authors&rsquo; affiliations. See <a href="{{ '/integrity/' | relative_url }}">independence and integrity</a>.</p>
+<section class="section">
+  <div class="wrap disclose">
+    {% include trudy-note.html say="I give GCDIR data. What they do with it is up to them." %}
+    <div class="disclose-body">
+      <p class="eyebrow">Where it comes from</p>
+      <h2>Trudy, disclosed.</h2>
+      <p>Trudy is software that predicts which creators will sell for a brand. The campaign records and creator profiles it is built on are the data we study.</p>
+      <p>Several GCDIR members also work at Trudy. Every publication states where its data came from, who paid for what, and each author&rsquo;s affiliations. Trudy can check a manuscript for confidential business or personal data before submission. It cannot change a finding or stop a paper.</p>
+      <a class="link-arrow" href="{{ '/integrity/' | relative_url }}">Independence and integrity</a>
     </div>
   </div>
 </section>
 
-{% include cta.html title="Data access" text="Applications for data access are made online and reviewed by the research team. Questions about the data can be sent by email." %}
+<section class="section section--white" id="access">
+  <div class="wrap">
+    <div class="section-head section-head--row">
+      <div>
+        <p class="eyebrow">Access</p>
+        <h2>How access works.</h2>
+      </div>
+      <a class="link-arrow" href="{{ '/apply/?track=data-access' | relative_url }}">Apply for data access</a>
+    </div>
+    <div class="cards steps-cards">
+      <div class="card" style="--c: var(--peri-ink)">
+        <h3>Name the project</h3>
+        <p>Access is for a named project with a stated research question. GCDIR researchers and approved external collaborators can apply.</p>
+      </div>
+      <div class="card" style="--c: var(--lilac-ink)">
+        <h3>Review</h3>
+        <p>Each request goes through our data governance and ethics review before any data are shared.</p>
+      </div>
+      <div class="card" style="--c: var(--orange-ink)">
+        <h3>Agreement</h3>
+        <p>Work starts with a written agreement covering data use, publication and confidentiality. A full access policy for external researchers, including institutional review, is being written.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include cta.html title="Have a question the data could answer?" text="Apply online and the research team will review it. Questions about what the data hold can go by email." url="/apply/?track=data-access" button="Apply for access" %}

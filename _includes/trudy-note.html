@@ -1,0 +1,8 @@
+<figure class="trudy-note">
+  <div class="trudy-note-art">
+    <img src="{{ '/assets/images/trudy/trudy-happy.svg' | relative_url }}" alt="Trudy, a lilac speech bubble in glasses, smiling" width="459" height="366" loading="lazy">
+    {% include sparkles.svg %}
+  </div>
+  <blockquote class="bubble bubble--lilac">{{ include.say }}</blockquote>
+  <figcaption><a href="https://www.trudy.app" aria-label="Trudy, trudy.app">{% include trudy-logo.svg %}</a><span>{{ include.caption | default: "Software, since 2022. The glasses are for show." }}</span></figcaption>
+</figure>

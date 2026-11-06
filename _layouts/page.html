@@ -1,11 +1,21 @@
 ---
 layout: default
 ---
-<header class="page-hero">
-  <div class="container">
-    {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
-    <h1>{{ page.heading | default: page.title }}</h1>
-    {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+<header class="page-hero accent-{{ page.accent | default: 'lilac' }}">
+  <div class="wrap page-hero-inner">
+    <div class="page-hero-copy">
+      {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+      <h1>{{ page.heading | default: page.title }}</h1>
+      {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+    </div>
+    {% if page.bubble %}
+    <div class="page-hero-art" aria-hidden="true">
+      <i class="shape shape--lozenge"></i>
+      <i class="shape shape--dot"></i>
+      <p class="say">{{ page.bubble }}</p>
+      {% include sparkles.svg %}
+    </div>
+    {% endif %}
   </div>
 </header>
 {{ content }}

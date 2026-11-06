@@ -1,7 +1,7 @@
 title: Global Center for Digital Influence Research
 short_title: GCDIR
-tagline: Independent research on digital influence
-description: "GCDIR is an independent research center that studies persuasion on social media, using conversion and sales records from commercial influencer campaigns."
+tagline: Independent research on who people believe online
+description: "GCDIR is an independent research center that studies who people believe online, using the sales and sign-up records of commercial creator campaigns."
 url: "https://gcdir.org"
 baseurl: ""
 lang: en
@@ -56,10 +56,10 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/gcdir_logo.png
+      image: /assets/images/og-card.png
 
 twitter:
-  card: summary
+  card: summary_large_image
 
 exclude:
   - README.md

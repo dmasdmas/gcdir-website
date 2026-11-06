@@ -1,13 +1,17 @@
 ---
 title: Blog
 permalink: /blog/
+eyebrow: Blog
 heading: Blog
-lede: Research notes, commentary on new work in the field, and discussion of methods.
+lede: Research notes, comments on new work in the field, and the methods questions we keep arguing about.
+bubble: Notes from the desk.
+accent: orange
 description: The GCDIR blog publishes research notes, commentary and methodological discussion on digital influence.
 ---
 <section class="section">
-  <div class="container">
+  <div class="wrap">
+    <h2 class="sr-only">All posts</h2>
     {% include post-list.html limit=100 %}
-    <p class="muted small note">To propose a post, write to <a href="mailto:{{ site.email }}?subject=Blog%20contribution">{{ site.email }}</a>.</p>
+    <p class="muted small note">Want to write a post? Send the idea to <a href="mailto:{{ site.email }}?subject=Blog%20contribution">{{ site.email }}</a>.</p>
   </div>
 </section>

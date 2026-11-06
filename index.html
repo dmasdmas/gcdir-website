@@ -1,65 +1,138 @@
 ---
 layout: default
 title: Global Center for Digital Influence Research
-description: GCDIR is an independent research center that studies persuasion on social media, using conversion and sales records from commercial influencer campaigns.
+description: GCDIR is an independent research center that studies who people believe online, using the sales and sign-up records of commercial creator campaigns.
 body_class: home
 ---
-<section class="hero">
-  <div class="container hero-inner">
-    <div class="hero-copy">
-      <p class="eyebrow">Independent research center &middot; Founded 2025</p>
-      <h1>Research on persuasion in social media</h1>
-      <p class="lede">GCDIR studies when content from social media creators changes the behavior of their audiences. Its main data resource links profiles of creators to the conversion and sales records of their commercial campaigns.</p>
-      <div class="actions">
-        <a class="btn btn-light" href="{{ '/research/' | relative_url }}">Research program</a>
-        <a class="btn btn-ghost" href="{{ '/data/' | relative_url }}">The data</a>
+<section class="band hero">
+  <i class="shape shape--lozenge" aria-hidden="true"></i>
+  <i class="shape shape--bubble" aria-hidden="true"></i>
+  <i class="shape shape--dot" aria-hidden="true"></i>
+  <div class="wrap">
+    {% include sparkles.svg %}
+    <p class="eyebrow">Independent research center &middot; Founded 2025</p>
+    <h1>Who do people <span class="hl-lilac">believe</span> online, and why?</h1>
+    <p class="thesis">Most research on influence counts likes, because likes are public. We study what audiences did after a creator spoke: what they <em>bought</em>, <em>joined</em> and <em>signed up for</em>. Then we work out why.</p>
+    <div class="args">
+      <div class="arg" style="--c: var(--peri)">
+        <p class="arg-k"><i></i>The outcomes</p>
+        <h2>What audiences did</h2>
+        <p>About <b>230,000</b> campaigns where we know what happened next: sales, sign-ups and revenue.</p>
+      </div>
+      <div class="arg" style="--c: var(--lilac)">
+        <p class="arg-k"><i></i>The people</p>
+        <h2>Who the creator is</h2>
+        <p>Personality, values and way of talking, for about <b>10 million</b> creators.</p>
+      </div>
+      <div class="arg" style="--c: var(--orange)">
+        <p class="arg-k"><i></i>The rules</p>
+        <h2>The test comes first</h2>
+        <p>We write down the rule <b>before</b> we look at the outcomes, and publish the result <b>either way</b>.</p>
       </div>
     </div>
-    <div class="hero-art" aria-hidden="true">{% include hero-art.svg %}</div>
+    <div class="actions">
+      <a class="btn btn-bright" href="{{ '/research/' | relative_url }}">The research</a>
+      <a class="btn btn-ghost-light" href="{{ '/data/' | relative_url }}">The data</a>
+    </div>
   </div>
 </section>
 
-<section class="stats" aria-label="The principal data resource in figures">
-  <div class="container">
+<section class="section section--tight" aria-label="Our main data resource in figures">
+  <div class="wrap">
     {% include stats.html %}
-    <p class="stats-note">Figures describe the principal data resource, provided by Trudy. <a href="{{ '/data/' | relative_url }}">About the data</a></p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container split">
-    <div>
-      <h2>Approach</h2>
-      <p>Most research on social media influence works with the numbers platforms make public: views, likes and shares. They are easy to collect, but they say little about whether anyone was persuaded.</p>
-      <p>GCDIR works with records of what audiences did after a campaign, such as purchases and sign-ups. Each campaign is linked to a profile of the creator who ran it, covering personality, values and communication style. That makes it possible to ask which creators change behavior and to check the answer against what happened.</p>
-      <a class="link-arrow" href="{{ '/data/' | relative_url }}">What the data contain</a>
-    </div>
-    <div class="compare">
-      <div class="compare-item">
-        <p class="label">Commonly measured</p>
-        <ul class="tags"><li>Views</li><li>Likes</li><li>Shares</li></ul>
-        <p class="compare-caption">Public and easy to collect, but only loosely related to persuasion.</p>
-      </div>
-      <div class="compare-item compare-item--strong">
-        <p class="label">Measured at GCDIR</p>
-        <ul class="tags"><li>Conversions</li><li>Revenue</li><li>Transactions</li><li>Creator profiles</li></ul>
-        <p class="compare-caption">What audiences did after a campaign, linked to the creator who ran it.</p>
-      </div>
-    </div>
+    <p class="stats-note">Figures describe our main data resource, which Trudy provides. <a href="{{ '/data/' | relative_url }}">About the data</a></p>
   </div>
 </section>
 
 <section class="section section--white">
-  <div class="container">
-    <div class="section-head">
-      <h2>Research</h2>
-      <p>The Center&rsquo;s main program studies persuasion by social media creators. Four related areas are also on its agenda.</p>
+  <div class="wrap split split--center">
+    <div>
+      <p class="eyebrow">Our approach</p>
+      <h2>Likes are easy to count. So everyone counts them.</h2>
+      <p>Views, likes and shares are public and plentiful. They say very little about whether anybody was persuaded.</p>
+      <p>We work with records of what audiences did after a campaign, each linked to a profile of the creator who ran it. That lets us ask which creators change behavior, and then check the answer against what actually happened.</p>
+      <a class="link-arrow" href="{{ '/data/' | relative_url }}">What the data contain</a>
     </div>
-    <div class="cards">
+    <div class="compare">
+      <div class="compare-item">
+        <p class="eyebrow">What most studies count</p>
+        <ul class="chips"><li>Views</li><li>Likes</li><li>Shares</li></ul>
+        <p>Public, plentiful, and only loosely related to persuasion.</p>
+      </div>
+      <div class="compare-item compare-item--strong">
+        <p class="eyebrow">What we count</p>
+        <ul class="chips">
+          <li style="--c: var(--peri)">Purchases</li>
+          <li style="--c: var(--lilac)">Sign-ups</li>
+          <li style="--c: var(--orange)">Revenue</li>
+          <li style="--c: var(--lime)">Creator profiles</li>
+        </ul>
+        <p>What audiences did after a campaign, linked to the person who ran it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Inside a creator profile</p>
+      <h2>Five traits, ten values and a way of talking.</h2>
+      <p>Psychology spent the best part of a century boiling people down to a short list. We use the two lists that held up best, and add how a creator talks.</p>
+    </div>
+    <div class="profile">
+      <div class="profile-block">
+        <h3>Personality <small>The Big Five</small></h3>
+        <ul class="ocean">
+          <li style="--k: var(--peri-ink)"><b>O</b><span>Openness</span></li>
+          <li style="--k: var(--lilac-ink)"><b>C</b><span>Conscientiousness</span></li>
+          <li style="--k: var(--orange-ink)"><b>E</b><span>Extraversion</span></li>
+          <li style="--k: var(--teal-ink)"><b>A</b><span>Agreeableness</span></li>
+          <li style="--k: var(--lime-ink)"><b>N</b><span>Neuroticism</span></li>
+        </ul>
+        <p>How someone goes about things. Everyone has all five, turned up or down.</p>
+      </div>
+      <div class="profile-block">
+        <h3>Values <small>Schwartz&rsquo;s ten</small></h3>
+        <div class="values">
+          <div class="values-group"><span>Open to change</span><ul class="chips"><li style="--c: var(--lime)">Self-direction</li><li style="--c: var(--lime)">Stimulation</li><li style="--c: var(--lime)">Hedonism</li></ul></div>
+          <div class="values-group"><span>Getting ahead</span><ul class="chips"><li style="--c: var(--orange)">Achievement</li><li style="--c: var(--orange)">Power</li></ul></div>
+          <div class="values-group"><span>Keeping steady</span><ul class="chips"><li style="--c: var(--peri)">Security</li><li style="--c: var(--peri)">Conformity</li><li style="--c: var(--peri)">Tradition</li></ul></div>
+          <div class="values-group"><span>Caring for others</span><ul class="chips"><li style="--c: var(--teal)">Benevolence</li><li style="--c: var(--teal)">Universalism</li></ul></div>
+        </div>
+        <p>What someone wants. The same ten turn up in more than 80 countries.</p>
+      </div>
+      <div class="profile-block">
+        <h3>Way of talking <small>Style</small></h3>
+        <ul class="talk">
+          <li style="--c: var(--peri)">Tone</li>
+          <li style="--c: var(--lilac)">Pace</li>
+          <li style="--c: var(--orange)">Warmth</li>
+          <li style="--c: var(--teal)">The words they reach for</li>
+        </ul>
+        <p>How it all comes across. The part an audience hears first.</p>
+      </div>
+    </div>
+    <p class="tests-note">Curious where you would land? Trudy&rsquo;s free tests use the same two models. <a href="https://app.trudy.app/tests">Take them at app.trudy.app/tests</a></p>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="wrap">
+    <div class="section-head section-head--row">
+      <div>
+        <p class="eyebrow">Research</p>
+        <h2>One big question, four nearby ones.</h2>
+      </div>
+      <a class="link-arrow" href="{{ '/research/' | relative_url }}">All research</a>
+    </div>
+    <div class="cards cards--research">
       <a class="card card--feature" href="{{ '/research/#primary-program' | relative_url }}">
-        <p class="label">Main program</p>
+        <i class="shape shape--bubble" aria-hidden="true"></i>
+        <i class="shape shape--lozenge" aria-hidden="true"></i>
+        <p class="eyebrow">Main program</p>
         <h3>The psychology of persuasion in creator-mediated environments</h3>
-        <p>The program relates psychological profiles of creators to what their audiences did after a campaign, to find out which creators persuade and why.</p>
+        <p>In plain words: which creators change what their audiences do, and why. We relate creator profiles to what happened after their campaigns.</p>
         <span class="link-arrow">The program</span>
       </a>
       {% include areas.html %}
@@ -67,38 +140,35 @@ body_class: home
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <h2>Current project</h2>
-    </div>
-    <article class="project">
-      <div class="project-meta"><span class="badge">Ongoing</span><span>2025&ndash;</span></div>
-      <h3>Birds of a Feather or Digital Echo Chambers: Congruency in Influencer Marketing</h3>
-      <p>Do audiences respond more to creators who resemble them? The project measures psychological and demographic similarity between creators and their audiences and relates it to engagement and conversions in commercial campaigns.</p>
+<section class="section section--lilac">
+  <div class="wrap split split--center">
+    <div>
+      <div class="project-meta"><span class="badge">Current project</span><span class="muted">2025&ndash;</span></div>
+      <h2>Birds of a feather, or digital echo chambers?</h2>
+      <p>Do audiences respond more to creators who resemble them? We measure how alike a creator and their audience are, psychologically and demographically, and relate it to engagement and sales in commercial campaigns.</p>
+      <p>The hunch: persuasion takes two. The project checks how much the pair matters.</p>
       <a class="link-arrow" href="{{ '/research/#current-projects' | relative_url }}">All projects</a>
-    </article>
+    </div>
+    <div class="pair">
+      {% include pair.svg %}
+    </div>
   </div>
 </section>
 
 {% assign s = site.data.symposium %}
-<section class="section section--white">
-  <div class="container">
-    <div class="section-head">
-      <h2>GCDIR Symposium, {{ s.when }}</h2>
-    </div>
-    <article class="event-feature event-feature--photo">
-      <div class="event-date event-date--photo" style="background-image: url('{{ '/assets/images/venue/venice-windward-avenue.jpg' | relative_url }}');" aria-hidden="true">
-        <span class="event-month">{{ s.month }}</span>
-        <span class="event-year">{{ s.year }}</span>
-        <span class="event-place">{{ s.city }}</span>
+<section class="section">
+  <div class="wrap">
+    <article class="event-card">
+      <div class="event-photo" style="background-image: url('{{ '/assets/images/venue/venice-windward-avenue.jpg' | relative_url }}');" role="img" aria-label="Windward Avenue in Venice, California, with the VENICE sign strung across the street">
+        <p class="event-stamp" aria-hidden="true"><b class="m">{{ s.month }}</b><b class="y">{{ s.year }}</b><span>Venice, CA</span></p>
       </div>
       <div class="event-body">
-        <p class="label">{{ s.edition }} meeting &middot; {{ s.venue }}, {{ s.city }}</p>
-        <h3>{{ s.title }}</h3>
-        <p>The first GCDIR Symposium brings together researchers and people who work at platforms, brands and creator businesses, for a program of empirical talks on persuasion and trust on social media. Dates and the call for talks will be announced here.</p>
+        <p class="eyebrow">{{ s.edition }} meeting &middot; {{ s.venue }}, {{ s.city }}</p>
+        <h2>{{ s.title }}</h2>
+        <p>Researchers, and the people who work at platforms, brands and creator businesses, in one room. Empirical talks on persuasion and trust online, with the evidence on the table.</p>
+        <p>Dates and the call for talks will be posted here first.</p>
         <div class="actions">
-          <a class="btn btn-light" href="{{ '/events/' | relative_url }}">About the symposium</a>
+          <a class="btn btn-dark" href="{{ '/events/' | relative_url }}">About the symposium</a>
           <a class="btn btn-ghost" href="{{ '/apply/?track=symposium-speaker' | relative_url }}">Propose a talk</a>
         </div>
       </div>
@@ -107,17 +177,30 @@ body_class: home
   </div>
 </section>
 
-<section class="section section--white section--tight">
-  <div class="container">
-    <p class="label">Affiliations and partners</p>
+<section class="section section--white">
+  <div class="wrap disclose">
+    {% include trudy-note.html say="GCDIR is the research center my humans run. We share humans, and I give them data." %}
+    <div class="disclose-body">
+      <p class="eyebrow">Where the data comes from</p>
+      <h2>Our data partner, in one line.</h2>
+      <p>Trudy is software that predicts which creators will sell for a brand. It provides our main data resource, and several of us also work there.</p>
+      <p>Trudy does not choose what we study, and it cannot stop us publishing. Who holds which role, and the rules we keep, are all on one page.</p>
+      <a class="link-arrow" href="{{ '/integrity/' | relative_url }}">Independence and integrity</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <p class="eyebrow">Affiliations and partners</p>
     {% include partners.html %}
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
+<section class="section section--tight">
+  <div class="wrap">
     <div class="section-head section-head--row">
-      <h2>Recent posts</h2>
+      <h2>From the blog</h2>
       <a class="link-arrow" href="{{ '/blog/' | relative_url }}">All posts</a>
     </div>
     {% include post-list.html limit=3 %}

@@ -1,40 +1,50 @@
 ---
 title: Contact
 permalink: /contact/
-heading: Contact
-lede: For research collaboration, data access, positions and partnerships, write to the Center by email or apply online.
+eyebrow: Contact
+heading: Write to us
+lede: About collaboration, data access, positions or partnerships. One address covers all of it, or you can apply online.
+bubble: Send it over.
+accent: peri
 description: Contact the Global Center for Digital Influence Research about collaboration, data access, open positions or partnerships.
 ---
 <section class="section">
-  <div class="container">
+  <div class="wrap">
     <a class="email-card" href="mailto:{{ site.email }}">
-      <span class="card-icon">{% include icons/mail.svg %}</span>
+      <i class="shape shape--bubble" aria-hidden="true"></i>
+      {% include sparkles.svg %}
       <span>
-        <span class="label">Email</span>
+        <span class="eyebrow">Email</span><br>
         <span class="email-address">{{ site.email }}</span>
       </span>
+      <span class="btn btn-bright">Write an email</span>
     </a>
 
+    <h2 class="sr-only">Ways to get in touch</h2>
     <div class="cards cards--2 contact-cards">
       <div class="card">
+        <span class="card-dot" style="--c: var(--peri)" aria-hidden="true"></span>
         <h3>Research collaboration</h3>
-        <p>To propose a joint project, or to ask whether GCDIR data could answer your research question.</p>
+        <p>To propose a joint project, or to ask whether our data could answer your research question.</p>
         <a class="link-arrow" href="mailto:{{ site.email }}?subject=Research%20collaboration">Email the research team</a>
       </div>
       <div class="card">
+        <span class="card-dot" style="--c: var(--lilac)" aria-hidden="true"></span>
         <h3>Data access</h3>
-        <p>To request access to the data for a defined project. <a href="{{ '/data/#access' | relative_url }}">How access works</a></p>
+        <p>To request the data for a defined project. <a href="{{ '/data/#access' | relative_url }}">How access works</a></p>
         <a class="link-arrow" href="{{ '/apply/?track=data-access' | relative_url }}">Apply for data access</a>
       </div>
       <div class="card">
+        <span class="card-dot" style="--c: var(--orange)" aria-hidden="true"></span>
         <h3>Positions</h3>
         <p>To apply for one of the <a href="{{ '/about/#opportunities' | relative_url }}">open positions</a> on the academic or industry track.</p>
         <a class="link-arrow" href="{{ '/apply/?track=affiliate' | relative_url }}">Apply</a>
       </div>
       <div class="card">
+        <span class="card-dot" style="--c: var(--teal)" aria-hidden="true"></span>
         <h3>Partnerships and funding</h3>
-        <p>For institutional or data partnerships, and for support of the Center&rsquo;s research or the symposium.</p>
-        <a class="link-arrow" href="mailto:{{ site.email }}?subject=Partnership%20and%20funding">Email the Center</a>
+        <p>For institutional or data partnerships, and for support of our research or the symposium.</p>
+        <a class="link-arrow" href="mailto:{{ site.email }}?subject=Partnership%20and%20funding">Email us</a>
       </div>
     </div>
   </div>

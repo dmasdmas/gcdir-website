@@ -3,57 +3,63 @@ title: Events
 permalink: /events/
 eyebrow: Events
 heading: The GCDIR Symposium
-lede: A meeting for empirical research on persuasion and influence on social media, open to academic researchers and practitioners.
+lede: Researchers and practitioners in one room, talking about persuasion and trust online, with the evidence on the table.
+bubble: April 2027
+accent: lime
 description: The inaugural GCDIR Symposium on Digital Influence takes place in April 2027 at The Lighthouse in Venice, California.
 ---
 {% assign s = site.data.symposium %}
 <section class="section">
-  <div class="container">
-    <article class="event-feature">
-      <div class="event-date" aria-hidden="true">
-        <span class="event-month">{{ s.month }}</span>
-        <span class="event-year">{{ s.year }}</span>
-        <span class="event-place">{{ s.city }}</span>
+  <div class="wrap">
+    <article class="event-card">
+      <div class="event-ticket" aria-hidden="true">
+        <i class="shape shape--lozenge"></i>
+        <i class="shape shape--dot"></i>
+        {% include sparkles.svg %}
+        <p class="ticket-k">{{ s.edition }}</p>
+        <p class="ticket-m">{{ s.month }}</p>
+        <p class="ticket-y">{{ s.year }}</p>
+        <p class="ticket-place">{{ s.venue }} &middot; {{ s.city }}</p>
       </div>
       <div class="event-body">
-        <p class="label">{{ s.edition }} event</p>
+        <p class="eyebrow">{{ s.edition }} meeting</p>
         <h2>{{ s.title }}</h2>
-        <p class="event-meta">{{ s.when }} &middot; {{ s.venue }}, {{ s.city }}</p>
-        <p>The first GCDIR Symposium brings together academic researchers with people who work at platforms, brands and creator businesses. The program is for empirical work: studies that test how persuasion and trust operate on social platforms, ideally against measured outcomes such as purchases or sign-ups.</p>
+        <p>The first GCDIR Symposium brings academic researchers together with people who work at platforms, brands and creator businesses.</p>
+        <p>The program is for empirical work: studies that test how persuasion and trust work on social platforms, ideally against measured outcomes such as purchases or sign-ups. Theory is welcome too, if it is willing to meet the data.</p>
         <div class="actions">
-          <a class="btn btn-light" href="{{ '/apply/?track=symposium-attend' | relative_url }}">Register interest</a>
+          <a class="btn btn-dark" href="{{ '/apply/?track=symposium-attend' | relative_url }}">Register interest</a>
           <a class="btn btn-ghost" href="{{ '/apply/?track=symposium-speaker' | relative_url }}">Propose a talk</a>
         </div>
       </div>
     </article>
 
     <dl class="facts">
-      <div class="fact">
-        <dt class="label">When</dt>
+      <div class="fact" style="--c: var(--peri)">
+        <dt>When</dt>
         <dd>{{ s.when }}<span>{{ s.when_note }}</span></dd>
       </div>
-      <div class="fact">
-        <dt class="label">Where</dt>
+      <div class="fact" style="--c: var(--lilac)">
+        <dt>Where</dt>
         <dd>{{ s.venue }}<span>{{ s.address }}</span></dd>
       </div>
-      <div class="fact">
-        <dt class="label">Format</dt>
-        <dd>In person<span>Places are limited; attendance by registration</span></dd>
+      <div class="fact" style="--c: var(--orange)">
+        <dt>Format</dt>
+        <dd>In person<span>Places are limited, and attendance is by registration</span></dd>
       </div>
     </dl>
   </div>
 </section>
 
 <section class="section section--white" id="venue">
-  <div class="container split split--media">
+  <div class="wrap split split--center">
     <figure class="media">
       <img src="{{ '/assets/images/venue/venice-windward-avenue.jpg' | relative_url }}" alt="Windward Avenue in Venice, California, with the VENICE sign strung across the street" width="1920" height="1080" loading="lazy">
       <figcaption>Windward Avenue, a block from The Lighthouse. Photo: <a href="https://commons.wikimedia.org/wiki/File:Venice_Beach_Sign.jpg">glwx</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, cropped.</figcaption>
     </figure>
     <div>
-      <p class="label">Venue</p>
+      <p class="eyebrow">Venue</p>
       <h2>{{ s.venue }}, Venice</h2>
-      <p>The symposium takes place at {{ s.venue }}, a campus for companies in the creator economy. It occupies the former Venice Post Office, a 1939 New Deal building on Windward Circle, one block from the Venice Beach boardwalk.</p>
+      <p>{{ s.venue }} is a campus for companies in the creator economy. It lives in the former Venice Post Office, a 1939 New Deal building on Windward Circle, one block from the boardwalk.</p>
       <p class="muted">{{ s.address }}</p>
       <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=1601+Main+St+Venice+CA+90291">Open in Google Maps</a>
     </div>
@@ -61,16 +67,17 @@ description: The inaugural GCDIR Symposium on Digital Influence takes place in A
 </section>
 
 <section class="section">
-  <div class="container split">
+  <div class="wrap split">
     <div>
-      <h2>Program</h2>
-      <p>The program will consist of invited keynotes, talks selected from submitted proposals, and a closing discussion between researchers and practitioners.</p>
-      <p class="muted small">Speakers and the full program will be published on this page.</p>
+      <p class="eyebrow">Program</p>
+      <h2>What we&rsquo;ll talk about.</h2>
+      <p>Invited keynotes, talks chosen from submitted proposals, and a closing discussion between researchers and practitioners.</p>
+      <p class="muted small">Speakers and the full program will be posted on this page.</p>
     </div>
-    <ol class="qlist">
-      <li>Creator characteristics and audience response</li>
-      <li>Measuring influence by outcomes such as purchases and changes in behavior</li>
-      <li>Similarity between creators and their audiences, and when it helps or hurts</li>
+    <ol class="qlist qlist--plain">
+      <li>Creator characteristics and how audiences respond</li>
+      <li>Measuring influence by outcomes, such as purchases and changes in behavior</li>
+      <li>Similarity between creators and audiences, and when it helps or hurts</li>
       <li>Misinformation in feed-based media</li>
       <li>AI-generated creators and content</li>
       <li>Pre-registration, causal inference and measurement in large observational data</li>
@@ -79,23 +86,27 @@ description: The inaugural GCDIR Symposium on Digital Influence takes place in A
 </section>
 
 <section class="section section--white">
-  <div class="container">
+  <div class="wrap">
     <div class="section-head">
-      <h2>Talks and registration</h2>
+      <p class="eyebrow">Talks and registration</p>
+      <h2>Two ways in.</h2>
     </div>
     <div class="cards cards--2">
       <div class="card">
+        <span class="card-dot" style="--c: var(--lilac)" aria-hidden="true"></span>
         <h3>Propose a talk</h3>
-        <p>Proposals for empirical, methodological or theoretical work are welcome from academia and industry. For now, send a title and a short abstract. The full call, with deadlines, will be published on this page.</p>
+        <p>Empirical, methodological or theoretical work is welcome, from academia and industry alike. For now, send a title and a short abstract. The full call, with deadlines, will be posted here.</p>
         <a class="link-arrow" href="{{ '/apply/?track=symposium-speaker' | relative_url }}">Submit a proposal</a>
       </div>
       <div class="card">
+        <span class="card-dot" style="--c: var(--orange)" aria-hidden="true"></span>
         <h3>Attend</h3>
-        <p>Places are limited. Researchers, students and practitioners who register their interest will be contacted first when registration opens.</p>
+        <p>Places are limited. Researchers, students and practitioners who register interest hear first when registration opens.</p>
         <a class="link-arrow" href="{{ '/apply/?track=symposium-attend' | relative_url }}">Register interest</a>
       </div>
     </div>
   </div>
 </section>
 
-{% include cta.html title="Sponsorship and co-organization" text="Institutions and companies that would like to support or co-organize the symposium can contact the organizing team." %}
+{% capture sponsor_url %}mailto:{{ site.email }}?subject=Symposium%20sponsorship{% endcapture %}
+{% include cta.html title="Want to support the symposium?" text="Institutions and companies that would like to sponsor or co-organize it can write to the organizing team." url=sponsor_url button="Write to us" %}

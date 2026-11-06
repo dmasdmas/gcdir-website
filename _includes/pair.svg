@@ -1,0 +1,13 @@
+<svg viewBox="0 0 460 330" role="img" aria-labelledby="pair-title" focusable="false">
+  <title id="pair-title">Two overlapping circles, the creator and the audience. The overlap, how alike they are, is what the project measures.</title>
+  <defs><clipPath id="pair-clip"><circle cx="165" cy="165" r="128"/></clipPath></defs>
+  <circle cx="165" cy="165" r="128" fill="#DCE3FD"/>
+  <circle cx="295" cy="165" r="128" fill="#FBE5C4"/>
+  <circle cx="295" cy="165" r="128" fill="#CD8DFF" clip-path="url(#pair-clip)"/>
+  <text class="pair-label" x="100" y="170" text-anchor="middle">Creator</text>
+  <text class="pair-label" x="360" y="170" text-anchor="middle">Audience</text>
+  <text class="pair-mid" x="230" y="160" text-anchor="middle">How</text>
+  <text class="pair-mid" x="230" y="190" text-anchor="middle">alike?</text>
+  <path transform="translate(396 14) scale(1.4)" d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z" fill="#FFDE17"/>
+  <path transform="translate(30 262) scale(.9)" d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z" fill="#7D97F4"/>
+</svg>

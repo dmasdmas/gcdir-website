@@ -1,14 +1,16 @@
 <section class="section section--cta">
-  <div class="container">
+  <div class="wrap">
     <div class="cta">
-      <div class="cta-art" aria-hidden="true">{% include hero-art.svg %}</div>
+      <i class="shape shape--bubble" aria-hidden="true"></i>
+      <i class="shape shape--lozenge" aria-hidden="true"></i>
+      {% include sparkles.svg %}
       <div class="cta-copy">
-        <h2>{{ include.title | default: "Contact" }}</h2>
-        <p>{{ include.text | default: "Researchers who would like to use the data, propose a joint project or join as an affiliate can apply online or write to the Center." }}</p>
+        <h2>{{ include.title | default: "Got a question our data could answer?" }}</h2>
+        <p>{{ include.text | default: "Send it over and we&rsquo;ll have a look. Researchers can apply for data access, propose a joint project or join as an affiliate." }}</p>
       </div>
       <div class="actions">
-        <a class="btn btn-light" href="{{ '/apply/' | relative_url }}">Apply</a>
-        <a class="btn btn-ghost" href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a class="btn btn-bright" href="{{ include.url | default: '/apply/' | relative_url }}">{{ include.button | default: "Apply" }}</a>
+        <a class="btn btn-ghost-light" href="mailto:{{ site.email }}">{{ site.email }}</a>
       </div>
     </div>
   </div>
