@@ -15,6 +15,32 @@ Website of the Global Center for Digital Influence Research (GCDIR), live at
   `autodiscover` and SPF records in GoDaddy DNS alone when changing anything
   else.
 
+## Who can edit
+
+The repo belongs to the GitHub account `dmasdmas` (Didrik). Anyone added under
+**Settings → Collaborators** can edit it; collaborators can change any file
+and publish, but not the repo settings, the custom domain or the collaborator
+list.
+
+**Everything pushed to `main` is live on gcdir.org within a minute or two.**
+There is no review step, so preview larger changes first (see below).
+
+### Editing in the browser
+
+Good for text changes:
+
+1. Open the file on github.com (for example `people.html`) and click the
+   pencil icon.
+2. Make the change, then **Commit changes**. Choose "Create a new branch" if
+   you want someone to look at it first; otherwise it goes live directly.
+3. To add a photo, open the folder (for example `assets/images/people/`) and
+   use **Add file → Upload files**.
+
+### Editing on your computer
+
+Clone the repo, edit, preview locally (below), then push to `main`. Claude
+Code works well here: open the folder and describe the change.
+
 ## Where things live
 
 | What | File |
