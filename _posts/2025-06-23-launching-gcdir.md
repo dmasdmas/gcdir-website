@@ -6,8 +6,6 @@ author: "GCDIR Team"
 excerpt: "An introduction to the Global Center for Digital Influence Research, its research agenda, and its institutional model."
 ---
 
-23 June 2025 · GCDIR
-
 The Global Center for Digital Influence Research (GCDIR) is an independent, interdisciplinary research organization established to study how digital technologies shape attitudes, beliefs, and behavior. This post introduces the Center, its research agenda, and the institutional model under which it operates.
 
 ## Background

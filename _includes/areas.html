@@ -1,0 +1,7 @@
+{% for a in site.data.areas %}
+  <div class="card">
+    <div class="card-icon">{% include icons/{{ a.icon }}.svg %}</div>
+    <h3>{{ a.title }}</h3>
+    <p>{{ a.text }}</p>
+  </div>
+{% endfor %}

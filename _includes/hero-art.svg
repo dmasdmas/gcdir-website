@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 400" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true" focusable="false">
+  <g stroke-width="1.5">
+    <circle cx="150" cy="200" r="110"/>
+    <ellipse cx="150" cy="200" rx="45" ry="110" opacity=".7"/>
+    <ellipse cx="150" cy="200" rx="85" ry="110" opacity=".45"/>
+    <path d="M150 90v220M40 200h220" opacity=".7"/>
+    <path d="M54.7 145h190.6M54.7 255h190.6" opacity=".45"/>
+  </g>
+  <g stroke-width="2">
+    <path d="M257.2 110a140 140 0 0 1 0 180" opacity=".9"/>
+    <path d="M284.1 87.5a175 175 0 0 1 0 225" opacity=".6"/>
+    <path d="M310.9 65a210 210 0 0 1 0 270" opacity=".35"/>
+  </g>
+  <circle cx="150" cy="200" r="4" fill="currentColor" stroke="none"/>
+</svg>

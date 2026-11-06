@@ -1,0 +1,15 @@
+<section class="section section--cta">
+  <div class="container">
+    <div class="cta">
+      <div class="cta-art" aria-hidden="true">{% include hero-art.svg %}</div>
+      <div class="cta-copy">
+        <h2>{{ include.title | default: "Work with GCDIR" }}</h2>
+        <p>{{ include.text | default: "We welcome researchers, practitioners and institutions interested in collaboration, data partnerships, or independent research aligned with our agenda." }}</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-light" href="{{ '/contact/' | relative_url }}">Get in touch</a>
+        <a class="btn btn-ghost" href="{{ '/apply/' | relative_url }}">Apply</a>
+      </div>
+    </div>
+  </div>
+</section>

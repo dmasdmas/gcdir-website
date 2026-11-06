@@ -1,0 +1,14 @@
+# Research areas shown on the home and research pages.
+# icon = file name in _includes/icons/
+- title: Platform dynamics
+  icon: network
+  text: Algorithmic curation, the diffusion of content through networks, and the structural conditions under which platforms shape attention and behavior.
+- title: Misinformation and persuasive integrity
+  icon: shield
+  text: How misleading information is produced and spreads, and the role of trusted intermediaries in amplifying or resisting it.
+- title: Political communication
+  icon: landmark
+  text: Digital campaigning and advertising, and how the mechanisms of commercial persuasion translate into political contexts.
+- title: Emerging technologies
+  icon: spark
+  text: The persuasive properties and methodological challenges of generative AI, synthetic media and immersive media.

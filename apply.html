@@ -1,0 +1,224 @@
+---
+title: Apply
+permalink: /apply/
+eyebrow: Apply
+heading: Apply to work with GCDIR
+lede: Apply for access to GCDIR's data for a research project, to join the network as a research affiliate, to collaborate from industry, or to take part in the 2027 Symposium.
+description: Apply to GCDIR for data access, a research affiliation, an industry collaboration, or a place at the 2027 GCDIR Symposium.
+---
+<section class="section">
+  <div class="container form-layout">
+    <div class="form-card">
+      <form id="apply-form" class="apply-form" action="{% if site.apply_form_endpoint != '' %}{{ site.apply_form_endpoint }}{% else %}mailto:{{ site.email }}{% endif %}" method="post" data-endpoint="{{ site.apply_form_endpoint }}" data-email="{{ site.email }}">
+        <fieldset class="form-section">
+          <legend>About you</legend>
+          <div class="form-grid">
+            <div class="field">
+              <label for="f-name">Full name</label>
+              <input id="f-name" name="full_name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="f-inst">Institution or organization</label>
+              <input id="f-inst" name="institution" type="text" autocomplete="organization" required>
+            </div>
+            <div class="field">
+              <label for="f-position">Position</label>
+              <select id="f-position" name="position" required>
+                <option value="" selected disabled>Choose one&hellip;</option>
+                <option>Faculty</option>
+                <option>Postdoctoral researcher</option>
+                <option>PhD student</option>
+                <option>Master&rsquo;s student</option>
+                <option>Industry researcher or data scientist</option>
+                <option>Practitioner (brand, agency, platform or creator)</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-country">Country <span class="optional">(optional)</span></label>
+              <input id="f-country" name="country" type="text" autocomplete="country-name">
+            </div>
+            <div class="field">
+              <label for="f-links">Links <span class="optional">(optional)</span></label>
+              <input id="f-links" name="links" type="text" placeholder="Website, ORCID or LinkedIn">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend>Your application</legend>
+          <div class="form-grid">
+            <div class="field field--full">
+              <label for="f-track">What are you applying for?</label>
+              <select id="f-track" name="track" required>
+                <option value="" selected disabled>Choose one&hellip;</option>
+                <option value="data-access">Data access for a research project</option>
+                <option value="affiliate">Research affiliate (academic track)</option>
+                <option value="industry">Industry collaboration (industry track)</option>
+                <option value="symposium-speaker">Present at the 2027 Symposium</option>
+                <option value="symposium-attend">Attend the 2027 Symposium</option>
+              </select>
+            </div>
+            <div class="field field--full" data-show-for="data-access affiliate industry symposium-speaker">
+              <label for="f-title">Title of your project or talk <span class="optional">(optional)</span></label>
+              <input id="f-title" name="title" type="text">
+            </div>
+            <div class="field field--full" data-show-for="data-access affiliate industry symposium-speaker">
+              <label for="f-summary">Your proposal</label>
+              <p class="hint" id="f-summary-hint">Describe what you would like to do with GCDIR, in up to 300 words.</p>
+              <textarea id="f-summary" name="summary" rows="7" maxlength="2400" aria-describedby="f-summary-hint" required></textarea>
+            </div>
+            <div class="field field--full" data-show-for="data-access">
+              <label for="f-data">What data would you need? <span class="optional">(optional)</span></label>
+              <p class="hint" id="f-data-hint">For example: platforms, outcome measures, time period, and the level of detail your analysis requires.</p>
+              <textarea id="f-data" name="data_needs" rows="4" maxlength="1200" aria-describedby="f-data-hint"></textarea>
+            </div>
+            <div class="field field--full" data-show-for="data-access affiliate">
+              <label for="f-timeline">Proposed timeline <span class="optional">(optional)</span></label>
+              <input id="f-timeline" name="timeline" type="text" placeholder="For example: September 2027 to June 2028">
+            </div>
+            <div class="field field--full" data-show-for="symposium-attend">
+              <label for="f-interest">What brings you to the symposium? <span class="optional">(optional)</span></label>
+              <textarea id="f-interest" name="interest" rows="4" maxlength="1200"></textarea>
+            </div>
+            <div class="field field--full">
+              <label for="f-referral">How did you hear about GCDIR? <span class="optional">(optional)</span></label>
+              <input id="f-referral" name="referral" type="text">
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="hp" aria-hidden="true">
+          <label for="f-gotcha">Leave this field empty</label>
+          <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <label class="check">
+          <input type="checkbox" name="consent" value="yes" required>
+          <span>I agree that GCDIR may store and use the information in this form to assess my application and to contact me about it.</span>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Submit application</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </div>
+        <p class="muted small form-privacy">{% if site.apply_form_endpoint != '' %}Your application is delivered to the GCDIR team by email through Formspree, a form service. {% else %}Submitting opens your email app with your answers filled in, addressed to {{ site.email }}; your application is sent when you press send. {% endif %}We use what you send only to assess your application, and you can ask us to delete it at any time.</p>
+      </form>
+
+      <div class="form-success" id="apply-success" hidden tabindex="-1">
+        <div class="card-icon">{% include icons/mail.svg %}</div>
+        <h2>Thank you, your application has been sent</h2>
+        <p>A member of the research team will read it and reply by email. If you have questions in the meantime, write to <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+      </div>
+    </div>
+
+    <aside class="form-aside">
+      <h2 class="label">How applications are assessed</h2>
+      <ol class="steps">
+        <li><strong>You apply.</strong> Choose the track that fits best. One application per project is enough.</li>
+        <li><strong>We review.</strong> The research team assesses fit with the research agenda and feasibility, and for data access, whether the question can be answered with the available data within our data-protection rules.</li>
+        <li><strong>We talk.</strong> Shortlisted applicants are invited to a call with a member of the team.</li>
+        <li><strong>We agree terms.</strong> Data access and affiliations start with a written agreement covering data use, publication and confidentiality.</li>
+      </ol>
+      <div class="callout">
+        <p class="label">Good to know</p>
+        <p>Positions in the network are currently voluntary and unpaid. All research follows our <a href="{{ '/integrity/' | relative_url }}">independence and integrity commitments</a>.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<script>
+(function () {
+  var form = document.getElementById('apply-form');
+  if (!form) return;
+  var endpoint = form.getAttribute('data-endpoint');
+  var email = form.getAttribute('data-email');
+  var track = document.getElementById('f-track');
+  var hint = document.getElementById('f-summary-hint');
+  var status = form.querySelector('.form-status');
+  var button = form.querySelector('button[type="submit"]');
+  var success = document.getElementById('apply-success');
+  var opened = Date.now();
+
+  var hints = {
+    'data-access': 'Describe your research question, why it needs GCDIR data, and the outcomes you would study. Up to 300 words.',
+    'affiliate': 'Describe your research interests, how they relate to GCDIR’s agenda, and what you would like to work on. Up to 300 words.',
+    'industry': 'Describe your expertise and how you would like to contribute to GCDIR’s research. Up to 300 words.',
+    'symposium-speaker': 'Paste the abstract of your proposed talk: the question, the data and methods, and the main findings. Up to 300 words.'
+  };
+  var defaultHint = hint.textContent;
+
+  var wanted = new URLSearchParams(window.location.search).get('track');
+  if (wanted && track.querySelector('option[value="' + wanted + '"]')) track.value = wanted;
+
+  function update() {
+    var value = track.value;
+    var key = value || 'data-access';
+    form.querySelectorAll('[data-show-for]').forEach(function (el) {
+      var show = el.getAttribute('data-show-for').split(' ').indexOf(key) !== -1;
+      el.hidden = !show;
+      el.querySelectorAll('input, textarea, select').forEach(function (input) { input.disabled = !show; });
+    });
+    hint.textContent = hints[value] || defaultHint;
+  }
+  track.addEventListener('change', update);
+  update();
+
+  function say(message, isError) {
+    status.textContent = message;
+    status.classList.toggle('is-error', !!isError);
+  }
+
+  function showSuccess() {
+    form.hidden = true;
+    success.hidden = false;
+    success.focus();
+  }
+
+  function asText() {
+    var lines = [];
+    Array.prototype.forEach.call(form.elements, function (el) {
+      if (!el.name || el.name.charAt(0) === '_' || el.disabled || el.type === 'checkbox' || el.type === 'submit') return;
+      var value = el.tagName === 'SELECT' ? (el.selectedIndex > 0 ? el.options[el.selectedIndex].text : '') : el.value.trim();
+      if (!value) return;
+      var label = form.querySelector('label[for="' + el.id + '"]');
+      var name = label ? label.textContent.replace('(optional)', '').trim() : el.name;
+      lines.push(name + ':\n' + value);
+    });
+    return lines.join('\n\n');
+  }
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    // Bots fill hidden fields and submit instantly; drop those quietly.
+    if (form.elements._gotcha.value || Date.now() - opened < 3000) { showSuccess(); return; }
+
+    var subject = 'GCDIR application: ' + track.options[track.selectedIndex].text + ' — ' + form.elements.full_name.value.trim();
+
+    if (endpoint) {
+      var data = new FormData(form);
+      data.append('_subject', subject);
+      button.disabled = true;
+      say('Sending…');
+      fetch(endpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
+        .then(function (response) {
+          if (!response.ok) throw new Error(response.status);
+          showSuccess();
+        })
+        .catch(function () {
+          button.disabled = false;
+          say('Your application could not be sent. Please try again, or email it to ' + email + '.', true);
+        });
+    } else {
+      window.location.href = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(asText());
+      say('Your email app should now be open with your application filled in. Press send there to submit it. If nothing opened, email ' + email + '.');
+    }
+  });
+})();
+</script>

@@ -1,0 +1,13 @@
+<div class="post-list">
+  {% for post in site.posts limit: include.limit %}
+    <article class="post-item">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+      <div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>{% endif %}
+      </div>
+    </article>
+  {% else %}
+    <p class="muted">No posts yet. Check back soon.</p>
+  {% endfor %}
+</div>

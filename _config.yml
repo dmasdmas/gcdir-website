@@ -1,45 +1,70 @@
 title: Global Center for Digital Influence Research
+short_title: GCDIR
+tagline: Independent research on digital influence
 description: "GCDIR is an independent, interdisciplinary research organization studying how digital technologies shape attitudes, beliefs, and behavior."
 url: "https://gcdir.org"
 baseurl: ""
+lang: en
+email: contact@gcdir.org
+author: Global Center for Digital Influence Research
+logo: /assets/images/gcdir_logo.png
 
-# Build settings
 markdown: kramdown
-highlighter: rouge
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 
-# Navigation
-header_pages:
-  - research.md
-  - blog.html
-  - about.md
+permalink: /blog/:year/:month/:day/:title/
 
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /blog/:year/:month/:day/:title/
+# Main navigation (header and footer)
+nav:
+  - title: Research
+    url: /research/
+  - title: Data
+    url: /data/
+  - title: People
+    url: /people/
+  - title: Events
+    url: /events/
+  - title: About
+    url: /about/
+  - title: Blog
+    url: /blog/
 
-# Defaults
+# Site-wide bar above the header that links to the symposium (details in
+# _data/symposium.yml). Set to false to hide it.
+announcement: true
+
+# Where the /apply/ form sends applications. Leave empty and the form opens the
+# applicant's email app with their answers filled in, addressed to `email`.
+# Set it to a Formspree endpoint (https://formspree.io/f/xxxxxxxx) and
+# applications arrive by email without leaving the page.
+apply_form_endpoint: ""
+
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
   - scope:
       path: ""
     values:
-      layout: "default"
+      image: /assets/images/gcdir_logo.png
 
-# Sass settings for custom styling
-sass:
-  style: compressed
+twitter:
+  card: summary
 
-
-# Site settings
-author: "Global Center for Digital Influence Research"
-email: contact@gcdir.org 
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .jekyll-cache

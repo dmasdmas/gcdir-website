@@ -1,0 +1,8 @@
+<div class="stats-grid">
+  {% for s in site.data.stats %}
+    <div class="stat">
+      <div class="stat-num">{{ s.num }}</div>
+      <div class="stat-label">{{ s.label }}</div>
+    </div>
+  {% endfor %}
+</div>

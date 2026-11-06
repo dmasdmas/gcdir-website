@@ -1,0 +1,134 @@
+---
+layout: default
+title: Global Center for Digital Influence Research
+description: GCDIR is an independent, interdisciplinary research organization studying how digital technologies shape attitudes, beliefs, and behavior.
+body_class: home
+---
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Independent research &middot; Established 2025</p>
+      <h1>How digital influence shapes what people believe and do</h1>
+      <p class="lede">GCDIR is an independent, interdisciplinary research organization studying the psychology of persuasion on social platforms, measured against real behavioral outcomes rather than engagement proxies.</p>
+      <div class="actions">
+        <a class="btn btn-light" href="{{ '/research/' | relative_url }}">Explore our research</a>
+        <a class="btn btn-ghost" href="{{ '/contact/' | relative_url }}">Collaborate with us</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">{% include hero-art.svg %}</div>
+  </div>
+</section>
+
+<section class="stats" aria-label="Data resources at a glance">
+  <div class="container">
+    {% include stats.html %}
+    <p class="stats-note">Principal data resource provided by industry partner Trudy. <a href="{{ '/data/' | relative_url }}">About the data</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">Our approach</p>
+      <h2>Outcomes, not proxies</h2>
+      <p>The phenomena that matter most in digital influence &mdash; how trust is formed, how exposure turns into belief and behavior &mdash; happen at scale, in commercial environments, inside systems researchers rarely get to observe. Much of the field has therefore relied on what is publicly visible: likes, shares and impressions.</p>
+      <p>GCDIR links creator-level psychometric profiles to <strong>measured downstream behavior</strong> from commercial campaigns, including conversions and revenue. That makes it possible to study persuasion and behavioral change directly, to academic standards.</p>
+      <a class="link-arrow" href="{{ '/data/' | relative_url }}">How our data works</a>
+    </div>
+    <div class="compare">
+      <div class="compare-item">
+        <p class="label">What research usually measures</p>
+        <ul class="tags"><li>Likes</li><li>Shares</li><li>Impressions</li></ul>
+        <p class="compare-caption">Engagement proxies: publicly observable, but only loosely tied to persuasion.</p>
+      </div>
+      <div class="compare-item compare-item--strong">
+        <p class="label">What GCDIR measures</p>
+        <ul class="tags"><li>Conversions</li><li>Revenue</li><li>Transaction-level outcomes</li><li>Creator psychometrics</li></ul>
+        <p class="compare-caption">Validated behavioral outcomes, linked to the psychology of the creators who drove them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Research agenda</p>
+      <h2>What we study</h2>
+      <p>Our principal program examines persuasion in creator-mediated environments. Around it, we work with affiliated researchers on adjacent questions in digital influence.</p>
+    </div>
+    <div class="cards">
+      <a class="card card--feature" href="{{ '/research/#primary-program' | relative_url }}">
+        <div class="card-icon">{% include icons/person.svg %}</div>
+        <p class="label">Primary program</p>
+        <h3>The psychology of persuasion in creator-mediated environments</h3>
+        <p>When does content produced by individuals on social platforms shape the attitudes, trust and behavior of their audiences, and which creator characteristics &mdash; values, personality, communication style &mdash; make the difference?</p>
+        <span class="link-arrow">Read about the program</span>
+      </a>
+      {% include areas.html %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Current work</p>
+      <h2>Ongoing project</h2>
+    </div>
+    <article class="project">
+      <div class="project-meta"><span class="badge">Ongoing</span><span>2025&ndash;</span></div>
+      <h3>Birds of a Feather or Digital Echo Chambers: Congruency in Influencer Marketing</h3>
+      <p>How psychological and demographic congruency between content creators and their audiences relates to engagement and conversion outcomes in commercial influencer campaigns.</p>
+      <a class="link-arrow" href="{{ '/research/#current-projects' | relative_url }}">More on our projects</a>
+    </article>
+  </div>
+</section>
+
+{% assign s = site.data.symposium %}
+<section class="section section--white">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Upcoming</p>
+      <h2>The {{ s.edition | downcase }} GCDIR Symposium</h2>
+    </div>
+    <article class="event-feature">
+      <div class="event-date" aria-hidden="true">
+        <span class="event-month">{{ s.month }}</span>
+        <span class="event-year">{{ s.year }}</span>
+        <span class="event-place">{{ s.city }}</span>
+      </div>
+      <div class="event-body">
+        <p class="label">{{ s.when }} &middot; {{ s.venue }}, {{ s.city }}</p>
+        <h3>{{ s.title }}</h3>
+        <p>Researchers, platforms, brands and creators meet to present empirical work on how persuasion, trust and behavioral change happen on social platforms, measured against real outcomes.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="{{ '/events/' | relative_url }}">About the symposium</a>
+          <a class="btn btn-ghost" href="{{ '/apply/?track=symposium-speaker' | relative_url }}">Propose a talk</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section section--white section--tight">
+  <div class="container">
+    <p class="eyebrow">Affiliations and partners</p>
+    {% include partners.html %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head section-head--row">
+      <div>
+        <p class="eyebrow">From the blog</p>
+        <h2>Notes and commentary</h2>
+      </div>
+      <a class="link-arrow" href="{{ '/blog/' | relative_url }}">All posts</a>
+    </div>
+    {% include post-list.html limit=3 %}
+  </div>
+</section>
+
+{% include cta.html %}

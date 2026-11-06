@@ -1,0 +1,89 @@
+---
+title: Events
+permalink: /events/
+eyebrow: Events
+heading: The GCDIR Symposium
+lede: An annual meeting of researchers, platforms, brands and creators, built around one question &mdash; how digital influence shapes what people believe and do, measured by what they actually do.
+description: The inaugural GCDIR Symposium on Digital Influence takes place in April 2027 at The Lighthouse in Venice, California.
+---
+{% assign s = site.data.symposium %}
+<section class="section">
+  <div class="container">
+    <article class="event-feature">
+      <div class="event-date" aria-hidden="true">
+        <span class="event-month">{{ s.month }}</span>
+        <span class="event-year">{{ s.year }}</span>
+        <span class="event-place">{{ s.city }}</span>
+      </div>
+      <div class="event-body">
+        <p class="label">{{ s.edition }} event</p>
+        <h2>{{ s.title }}</h2>
+        <p class="event-meta">{{ s.when }} &middot; {{ s.venue }}, {{ s.city }}</p>
+        <p>The first GCDIR Symposium brings together academic researchers and the people who build, fund and work inside creator-driven media. Its focus is empirical: work that tests how persuasion, trust and behavioral change happen on social platforms, measured against real outcomes rather than engagement proxies.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="{{ '/apply/?track=symposium-attend' | relative_url }}">Register interest</a>
+          <a class="btn btn-ghost" href="{{ '/apply/?track=symposium-speaker' | relative_url }}">Propose a talk</a>
+        </div>
+      </div>
+    </article>
+
+    <dl class="facts">
+      <div class="fact">
+        <dt class="label">When</dt>
+        <dd>{{ s.when }}<span>{{ s.when_note }}</span></dd>
+      </div>
+      <div class="fact">
+        <dt class="label">Where</dt>
+        <dd>{{ s.venue }}<span>{{ s.address }}</span></dd>
+      </div>
+      <div class="fact">
+        <dt class="label">Format</dt>
+        <dd>In person<span>Places are limited; attendance by registration</span></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">Program</p>
+      <h2>Themes</h2>
+      <p>The program is built from invited keynotes and talks selected from submitted proposals, with a closing discussion between researchers and practitioners from platforms, brands and creator businesses.</p>
+      <p class="muted small">Speakers and the full program will be published on this page.</p>
+    </div>
+    <ol class="qlist">
+      <li>Persuasion and trust in creator-mediated environments: which creator characteristics move audiences, and why</li>
+      <li>Measuring influence by outcomes: conversions, purchases and behavior change instead of likes and impressions</li>
+      <li>Congruency between creators and audiences, and when similarity helps or hurts</li>
+      <li>Misinformation and persuasive integrity in feed-based media</li>
+      <li>AI-generated creators and content, and what they change about influence</li>
+      <li>Methods: pre-registration, causal inference and measurement at platform scale</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Get involved</p>
+      <h2>Take part in the symposium</h2>
+    </div>
+    <div class="cards cards--2">
+      <div class="card">
+        <div class="card-icon">{% include icons/doc.svg %}</div>
+        <h3>Propose a talk</h3>
+        <p>We welcome proposals for empirical, methodological or theoretical work on digital influence, from academia and from industry. Send a title and a short abstract; the full call for contributions, with deadlines, will be published here.</p>
+        <a class="link-arrow" href="{{ '/apply/?track=symposium-speaker' | relative_url }}">Submit a proposal</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">{% include icons/person.svg %}</div>
+        <h3>Attend</h3>
+        <p>Researchers, students and practitioners can register their interest now. We will contact registered people first when places open.</p>
+        <a class="link-arrow" href="{{ '/apply/?track=symposium-attend' | relative_url }}">Register interest</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include cta.html title="Partner with the symposium" text="Institutions and companies interested in supporting or co-organizing the symposium are welcome to get in touch." %}

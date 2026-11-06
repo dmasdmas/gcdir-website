@@ -1,36 +1,14 @@
 ---
-layout: default
 title: Blog
 permalink: /blog/
+eyebrow: Blog
+heading: Notes and commentary
+lede: Research notes, commentary on developments in the field, and discussion of methodological and substantive questions related to the Center's research agenda.
+description: The GCDIR blog publishes research notes, commentary and methodological discussion on digital influence.
 ---
-
-<h1>Blog</h1>
-
-<p>The GCDIR blog publishes commentary, research notes, and discussion of methodological and substantive questions related to the Center's research agenda. Contributions from affiliated researchers and external scholars are welcomed.</p>
-
-{% if site.posts.size > 0 %}
-  <div class="posts">
-    {% for post in site.posts %}
-      <article class="post">
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <p class="post-meta">
-          <time datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date: "%-d %B %Y" }}
-          </time>
-        </p>
-        {% if post.excerpt %}
-          <div class="post-excerpt">
-            {{ post.excerpt }}
-            <p><a href="{{ post.url | relative_url }}">Read more →</a></p>
-          </div>
-        {% endif %}
-      </article>
-    {% endfor %}
+<section class="section">
+  <div class="container">
+    {% include post-list.html limit=100 %}
+    <p class="muted small note">Researchers and practitioners interested in contributing are invited to write to <a href="mailto:{{ site.email }}?subject=Blog%20contribution">{{ site.email }}</a> with a proposal.</p>
   </div>
-{% else %}
-  <p>No posts yet. Check back soon.</p>
-{% endif %}
-
-<hr>
-
-<p>Researchers and practitioners interested in contributing to the blog are invited to write to <a href="mailto:contact@gcdir.org">contact@gcdir.org</a> with a proposal.</p>
+</section>
