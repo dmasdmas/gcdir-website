@@ -105,8 +105,23 @@ description: Apply to GCDIR for data access, a research affiliation, an industry
           <button class="btn btn-primary" type="submit">Submit application</button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </div>
-        <p class="muted small form-privacy">{% if site.apply_form_endpoint != '' %}Your application is delivered to the GCDIR team by email through Formspree, a form service. {% else %}Submitting opens your email app with your answers filled in, addressed to {{ site.email }}; your application is sent when you press send. {% endif %}We use what you send only to assess your application, and you can ask us to delete it at any time.</p>
+        <p class="muted small form-privacy">{% if site.apply_form_endpoint != '' %}Your application is sent to the GCDIR team by email through a form service. {% else %}After you press submit, you send your application to {{ site.email }} from your own email. {% endif %}We use what you send only to assess your application, and you can ask us to delete it at any time.</p>
       </form>
+
+      <div class="form-fallback" id="apply-fallback" hidden tabindex="-1">
+        <h2>Send your application by email</h2>
+        <p class="fallback-intro">To finish, email your application to <a href="mailto:{{ site.email }}">{{ site.email }}</a>. Copy it from the box below and paste it into an email, or open it in your email app.</p>
+        <label class="fallback-label" for="f-fallback-subject">Subject</label>
+        <input id="f-fallback-subject" type="text" readonly>
+        <label class="fallback-label" for="f-fallback-text">Application</label>
+        <textarea id="f-fallback-text" rows="12" readonly></textarea>
+        <div class="actions">
+          <button class="btn btn-primary" type="button" id="f-fallback-copy">Copy application</button>
+          <a class="btn btn-outline" id="f-fallback-mailto" href="mailto:{{ site.email }}">Open in email app</a>
+          <button class="btn btn-outline" type="button" id="f-fallback-back">Edit application</button>
+        </div>
+        <p class="form-status" id="f-fallback-status" role="status" aria-live="polite"></p>
+      </div>
 
       <div class="form-success" id="apply-success" hidden tabindex="-1">
         <div class="card-icon">{% include icons/mail.svg %}</div>
@@ -179,6 +194,37 @@ description: Apply to GCDIR for data access, a research affiliation, an industry
     success.focus();
   }
 
+  // Without a form service (or if it fails), show the application as text
+  // to copy into an email. A mailto link alone does nothing for people who
+  // use webmail and have no email app set up.
+  var fallback = document.getElementById('apply-fallback');
+  var fbSubject = document.getElementById('f-fallback-subject');
+  var fbText = document.getElementById('f-fallback-text');
+  var fbStatus = document.getElementById('f-fallback-status');
+  function showFallback(subject, intro) {
+    fbSubject.value = subject;
+    fbText.value = asText();
+    if (intro) fallback.querySelector('.fallback-intro').firstChild.textContent = intro + ' ';
+    document.getElementById('f-fallback-mailto').href = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(fbText.value);
+    fbStatus.textContent = '';
+    form.hidden = true;
+    fallback.hidden = false;
+    fallback.focus();
+  }
+  document.getElementById('f-fallback-copy').addEventListener('click', function () {
+    var text = 'Subject: ' + fbSubject.value + '\n\n' + fbText.value;
+    var done = function () { fbStatus.textContent = 'Copied. Paste it into an email to ' + email + '.'; };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done, function () { fbText.select(); document.execCommand('copy'); done(); });
+    } else { fbText.select(); document.execCommand('copy'); done(); }
+  });
+  document.getElementById('f-fallback-back').addEventListener('click', function () {
+    fallback.hidden = true;
+    form.hidden = false;
+    button.disabled = false;
+    say('');
+  });
+
   function asText() {
     var lines = [];
     Array.prototype.forEach.call(form.elements, function (el) {
@@ -207,16 +253,20 @@ description: Apply to GCDIR for data access, a research affiliation, an industry
       say('Sending…');
       fetch(endpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
         .then(function (response) {
-          if (!response.ok) throw new Error(response.status);
-          showSuccess();
+          return response.json().catch(function () { return {}; }).then(function (body) {
+            // Form services answer 200 even for some failures (FormSubmit
+            // says success "false" until the address is activated).
+            if (!response.ok || body.ok === false || String(body.success) === 'false' || body.errors) throw new Error(response.status);
+            showSuccess();
+          });
         })
         .catch(function () {
           button.disabled = false;
-          say('Your application could not be sent. Please try again, or email it to ' + email + '.', true);
+          say('');
+          showFallback(subject, 'Your application could not be sent from this page. To finish, email it to');
         });
     } else {
-      window.location.href = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(asText());
-      say('Your email app should now be open with your application filled in. Press send there to submit it. If nothing opened, email ' + email + '.');
+      showFallback(subject);
     }
   });
 })();

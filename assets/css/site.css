@@ -638,7 +638,7 @@ img.avatar { display: block; object-fit: cover; background: var(--slate-100); bo
 .field label { font-size: 0.92rem; font-weight: 600; color: var(--ink); }
 .optional { font-weight: 400; color: var(--muted); }
 .hint { margin: 0; font-size: 0.86rem; color: var(--muted); }
-.apply-form input[type="text"], .apply-form input[type="email"], .apply-form select, .apply-form textarea {
+.apply-form input[type="text"], .apply-form input[type="email"], .apply-form select, .apply-form textarea, .form-fallback input, .form-fallback textarea {
   width: 100%; font: inherit; font-size: 1rem; color: var(--text);
   background: var(--paper); border: 1px solid var(--line-strong); border-radius: 8px; padding: 11px 14px;
   transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
@@ -655,12 +655,18 @@ img.avatar { display: block; object-fit: cover; background: var(--slate-100); bo
 .check input { flex: none; width: 18px; height: 18px; margin-top: 4px; accent-color: var(--navy); }
 .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 .form-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 28px; }
-.form-actions button { border: 0; cursor: pointer; font: inherit; }
+.form-actions button { border: 0; cursor: pointer; }
 .form-actions button:disabled { opacity: 0.6; cursor: progress; }
 .form-status { margin: 0; font-size: 0.95rem; color: var(--green); }
 .form-status.is-error { color: #a33a2b; }
 .form-privacy { margin-top: 20px; }
 .form-success { text-align: left; }
+.form-fallback:focus { outline: none; }
+.form-fallback h2 { font-size: 1.6rem; }
+.form-fallback .fallback-label { display: block; margin: 20px 0 6px; font-size: 0.9rem; font-weight: 600; color: var(--navy); }
+.form-fallback textarea { resize: vertical; line-height: 1.55; font-size: 0.93rem; }
+.form-fallback button { cursor: pointer; }
+.form-fallback .form-status { margin-top: 14px; }
 .form-success:focus { outline: none; }
 .form-success h2 { font-size: 1.6rem; margin-top: 18px; }
 .form-aside > .label { padding-bottom: 14px; border-bottom: 1px solid var(--line-strong); margin-bottom: 22px; color: var(--navy-700); }
